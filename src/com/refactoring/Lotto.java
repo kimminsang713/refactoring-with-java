@@ -1,2 +1,10 @@
-package com.refactoring;public class Lotto {
+package com.refactoring;
+
+public class Lotto {
+
+
+    public static void Lotto(){
+
+    }
+
 }
