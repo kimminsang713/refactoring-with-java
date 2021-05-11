@@ -20,7 +20,7 @@ public class Lotto {
      * 사용자가 입력하는 상황 예시
      * - 7번을 반복하며 숫자를 입력 받는다.
      * - 마지막 번호가 보너스 번호이다.
-     * - 파라미터의 타입은 int[] .
+     * - 파라미터의 타입은 int[].
      *
      * 결과 과정 예시
      * - 중복을 허용하지 않는 7개의 랜덤의 숫자를 세팅한다.
@@ -30,12 +30,13 @@ public class Lotto {
 
     public static int[] Lotto(int[] clientInput){
        // -7번 입력을 받는다
-        clientInput = new int[]{1, 2, 3, 4, 5, 6, 7};
+
 //
 //        for(int i =0; i<clientInput.length; i++){
 //
 //        }
         System.out.println(Arrays.toString(clientInput));
 
+        return  clientInput;
     }
 }
