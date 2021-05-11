@@ -1,5 +1,5 @@
 
-package com.refactoring;
+package com.refactoring.Lotto;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -32,7 +32,6 @@ public class Lotto {
     public static int[] Lotto(int[] clientInput){
        // -7번 입력을 받는다
 
-//
 //        for(int i =0; i<clientInput.length; i++){
 //
 //        }

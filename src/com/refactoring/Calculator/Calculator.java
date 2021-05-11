@@ -1,4 +1,4 @@
-package com.refactoring;
+package com.refactoring.Calculator;
 
 import java.util.Scanner;
 
