@@ -1,8 +1,7 @@
 
 package com.refactoring.Lotto;
 
-import java.util.Arrays;
-import java.util.Scanner;
+import java.util.*;
 
 public class Lotto {
 
@@ -29,14 +28,17 @@ public class Lotto {
      * - 계산이 끝나면 System.out.println 으로 등수를 표현한다.
      */
 
-    public static int[] Lotto(int[] clientInput){
-       // -7번 입력을 받는다
+    public static int[] Lotto(int[] clientNum){
+        int minNumber = 1;
+        int maxNumber = 45;
+        // 랜덤 숫자 받기
+        int[]lottoNumber = new int[7];
 
-//        for(int i =0; i<clientInput.length; i++){
-//
-//        }
-        System.out.println(Arrays.toString(clientInput));
+        for(int random : lottoNumber){
+            random =  new Random().nextInt(45);
+            System.out.print(random + ",") ;
+        }
 
-        return  clientInput;
+        return clientNum;
     }
 }
