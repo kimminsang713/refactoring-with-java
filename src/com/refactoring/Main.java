@@ -1,5 +1,6 @@
 package com.refactoring;
 
+import com.refactoring.Calculator.Calculator;
 import com.refactoring.Lotto.Lotto;
 
 public class Main {
@@ -9,7 +10,6 @@ public class Main {
 //        Calculator.calculator();
 //             * Lotto 클래스의 구현은 로또번호를 파라미터로 받아서 처리한다.
         int[] arr = {1,2,3,4,5};
-
         Lotto.Lotto(arr);
 
     }
