@@ -9,8 +9,13 @@ public class Main {
 //        System.out.print("hello");
 //        Calculator.calculator();
 //             * Lotto 클래스의 구현은 로또번호를 파라미터로 받아서 처리한다.
-        int[] arr = {1,2,3,4,5};
-        Lotto.Lotto(arr);
+        int[] arr = {1,24,31,42,5,22,6};
+//
+        for(int i=0; i<=10000; i++){
+            Lotto lotto = new Lotto(arr);
+            lotto.start();
+
+        }
 
     }
 }
