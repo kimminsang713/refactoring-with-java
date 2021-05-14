@@ -3,7 +3,7 @@ package com.refactoring.Lotto;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Iterator;
-
+// a
 public class LottoRepactory {
     private static final int MIN = 1;
     private static final int MAX = 45;
