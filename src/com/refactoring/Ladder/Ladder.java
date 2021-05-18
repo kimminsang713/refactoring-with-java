@@ -31,19 +31,28 @@ public class Ladder {
       int amount = sc.nextInt();
       String[] ladderResult = new String[amount];
       // 2. 결과 값 넣기
-      for(int i=1; i<=amount; i++){
-          System.out.print( i +"번째 사다리 결과 값 입력 : ");
+      for(int i=0; i<amount; i++){
+          System.out.print( i+1 +"번째 사다리 결과 값 입력 : ");
           ladderResult[i] = sc.next();
       }
+
+//      for(int i =0; i<ladderResult.length; i++){
+//          int random = (int)(Math.random() * ladderResult.length);
+//          String shuffle = ladderResult[random];
+//          ladderResult[random] = ladderResult[i];
+//          ladderResult[i] = shuffle;
+//      }
+
+//      System.out.print(Arrays.toString(ladderResult));
       // 배열 순서를 섞어버림
       Collections.shuffle(Arrays.asList(ladderResult));
 
       // 배열 index 를 선택하여 결과값 뿌려주기
       int userChoice = 0;
-      for(int i=1; i<=amount; i++){
+      for(int i=0; i<amount; i++){
           System.out.print("사다리 번호 입력 : ");
           userChoice = sc.nextInt();
-          System.out.println( i + "번 사다리 결과 : " + ladderResult[userChoice]);
+          System.out.println( i+1 + "번 사다리 결과 : " + ladderResult[userChoice]);
       }
   }
 
