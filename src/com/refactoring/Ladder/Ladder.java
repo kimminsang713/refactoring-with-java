@@ -1,8 +1,6 @@
 package com.refactoring.Ladder;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Scanner;
+import java.util.*;
 
 /**
  * Created by marathoner on 2021/05/17
@@ -27,18 +25,26 @@ import java.util.Scanner;
 public class Ladder {
 
   public static void LadderGo(){
-      //1. 몇개를 선택할지에 대한 수량을 입력 받는다.
+      // 1. 몇개를 선택할지에 대한 개수를 입력 받는다.
       Scanner sc = new Scanner(System.in);
       System.out.print("사다리 갯수 : ");
       int amount = sc.nextInt();
-      String[] result = new String[amount];
-      for(int i=0; i<amount; i++){
-          System.out.print("사다리 결과 값 : ");
-          result[i] = sc.next();
+      String[] ladderResult = new String[amount];
+      // 2. 결과 값 넣기
+      for(int i=1; i<=amount; i++){
+          System.out.print( i +"번째 사다리 결과 값 입력 : ");
+          ladderResult[i] = sc.next();
       }
+      // 배열 순서를 섞어버림
+      Collections.shuffle(Arrays.asList(ladderResult));
 
-      System.out.println(Arrays.toString(result));
-
+      // 배열 index 를 선택하여 결과값 뿌려주기
+      int userChoice = 0;
+      for(int i=1; i<=amount; i++){
+          System.out.print("사다리 번호 입력 : ");
+          userChoice = sc.nextInt();
+          System.out.println( i + "번 사다리 결과 : " + ladderResult[userChoice]);
+      }
   }
 
 
